@@ -1,0 +1,30 @@
+<section id="age-gate" class="fullPage">
+  <div class="wrapper">
+    <form class="center">
+      <p>Qual é sua idade?</p>
+      <span class="line"></span>
+      <div class="small control-group">
+        <input type="text" name="d" id="dia" class="small" value="" maxlength="2" placeholder="00" ng-model="formData.d"/>
+        <label for="dia">Dia</label>
+      </div>
+      <div class="small control-group">
+        <input type="text" name="m" id="mes" class="small" value="" maxlength="2" placeholder="00" ng-model="formData.m"/>
+        <label for="mes">Mês</label>
+      </div>
+      <div class="big control-group">
+        <input type="text" name="a" id="ano" class="big" value="" maxlength="4" placeholder="0000" ng-model="formData.a"/>
+        <label for="ano">Ano</label>
+      </div>
+      <div class="full control-group">
+        <input type="checkbox" name="remember-me" id="remember-me" />
+        <label class="remember-me" for="remember-me">Lembrar meus dados</label>
+      </div>
+
+      <p>Este website é destinado para maiores de idade e residentes do Brasil.<br />Não clique nesta caixa se estiver compartilhando este computador</pt>
+      <span class="line"></span>
+      <input type="submit" value=""/>
+      <p>Entrar</p>
+    </form>
+  </div>
+  <div main-footer></div>
+</div>

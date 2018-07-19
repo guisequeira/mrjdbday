@@ -1,0 +1,19 @@
+{
+  "name": "mrjdmday",
+  "version": "1.0.0",
+  "description": "portifolio pessoal",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme A. Sequeira",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "engines": {
+    "node": "10.4.1",
+    "npm": "3.10.10"
+  }
+}

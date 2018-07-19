@@ -1,0 +1,53 @@
+<!DOCTYPE>
+
+<!--[if IE 7]>
+  <html class="ie7">
+<![endif]-->
+<!--[if IE 8]>
+  <html class="ie8">
+<![endif]-->
+<!--[if IE 9]>
+  <html class="ie9">
+<![endif]-->
+<!--[if !IE]><!-->
+<html ng-app="mrJackBirtdayApp">
+<!--<![endif]-->
+
+<head>
+  <title>Jack Daniel's - Mr's Jacks Birthday</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="public/stylesheets/scrollpane.css">
+  <link rel="stylesheet" type="text/css" href="public/stylesheets/stylesheet.css">
+
+  <!--[if IE 7]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+  <![endif]-->
+  <!--[if IE 8]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+  <![endif]-->
+  <!--[if IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <div class="loader" main-loader>
+    <span class="stroke"></span>
+    <span class="fill"></span>
+  </div>
+  <div main-header></div>
+  <div class="main-view">
+    <div ng-view class="page {{pageClass}}"></div>
+  </div>
+
+
+  <script src="public/javascripts/libs.js"></script>
+  <script src="public/javascripts/scrollpane.js"></script>
+  <script src="public/javascripts/mousewheel.js"></script>
+  <script src="public/javascripts/angular.js"></script>
+  <!-- // <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script> -->
+  <!-- // <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js"></script> -->
+  <!-- // <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>     -->
+  <script src="public/javascripts/application.js"></script>
+</body>
+</html>

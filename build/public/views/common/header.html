@@ -1,0 +1,59 @@
+<header id="mainHeader">
+  <a class="menuIcon" ng-click="isOpem = true" ng-show="checkNavHeader('main')">
+    <span class="line top"></span>
+    <span class="line middle"></span>
+    <span class="line bottom"></span>
+  </a>
+  <a class="backIcon" ng-href="#/" ng-show="checkNavHeader('back')"></a>
+
+  <h1>
+    <a href="#">
+      Making Jack Daniel
+    </a>
+  </h1>
+
+  <a class="facebookButton" ng-click="clickShare()" ng-show="checkNavHeader('share')"></a>
+<!--  -->
+  <nav id="mainMenu" class="animated" ng-class="{opened: isOpem}" ng-mouseleave="isOpem = false">
+    <ul>
+      <li>
+        <a ng-click="gotoTopic('home')" class="buttonJackHome">
+          <span class="img"></span>
+        </a>
+      </li>
+
+    <li>
+        <a ng-click="gotoTopic('independencia')" class="buttonWithOverMask buttonIndependencia independencia">
+          <span class="img"></span>
+
+          <p>Independência</p>
+        </a>
+      </li>
+     
+      
+      <li>
+        <a ng-click="gotoTopic('autenticidade')" class="buttonWithOverMask buttonIntegridade autenticidade">
+          <span class="img"></span>
+
+          <p>Integridade</p>
+        </a>
+      </li>
+
+      
+
+       <li>
+        <a ng-click="gotoTopic('integridade')" class="buttonWithOverMask buttonAutenticidade integridade">
+          <span class="img"></span>
+
+          <p>Autenticidade</p>
+        </a>
+      </li>
+
+      <li>
+        <a ng-click="gotoTopic('jack-saloon')" class="buttonJackSaloon">
+          <span class="img"></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

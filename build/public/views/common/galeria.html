@@ -1,0 +1,26 @@
+<section class="fullPage">
+   
+    <div class="internalPage gallery opened" ng-mousemove="onMouseMove($event)" ng-click="onClick()">
+<!--       <ul class="slides">
+        <li ng-repeat="img in images" class="slide">
+          
+        </li>
+      </ul> -->
+      <div class="wrapper-img">
+        <img ng-repeat="img in images" ng-src="{{img.src}}" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" class="preloader-image">  
+      </div>
+      
+      
+      
+    </div>
+
+    <div class="controls-galery" style="width: {{(total_images*15)-12}}px; margin-left:{{-(total_images*15)/2}}px">
+      <ul class="pageNav">
+        <li ng-repeat="img in images" >
+          <a ng-class="{'selected':isActive($index)}" ng-click=""></a>
+        </li>
+      </ul>
+      <a class="backToView360" ng-href="#/{{area}}/360"></a>
+    </div>
+
+  </section>
